@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Exercice 2</title>
+</head>
+<body>
+    <div>
+    <center>
+<div id="rectangle"></div>
+</center>
+<center>
+<button onclick="zoom()">faire le zoom</button>
+<button onclick="vert()">couleur verte</button>
+<button onclick="initiale()">remetre la couleur</button>
+<button onclick="disparaitre()">effacer</button>
+<button onclick="apparaitre()">remettre le rectangle</button>
+</center>
+</div>
+<script>
+function zoom(){
+    document.getElementById("rectangle").style.height="110px";
+}
+function vert(){
+    document.getElementById("rectangle").style.backgroundColor="green";
+}
+function initiale(){
+    document.getElementById("rectangle").style.backgroundColor="blue";
+}
+function disparaitre(){
+    document.getElementById("rectangle").style.visibility="hidden";
+}
+function apparaitre(){
+    document.getElementById("rectangle").style.visibility="visible";
+}
+</script>
+</body>
+</html>
